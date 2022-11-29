@@ -4,7 +4,7 @@ import "./App.css";
 import ListOfArticles from "./components/ListOfArticles";
 import { IArticle } from "./types";
 
-const ARTICLES = require("./articles_financial.json") as IArticle[];
+const ARTICLES = require("./kaggle.json") as IArticle[];
 
 function App() {
     return (

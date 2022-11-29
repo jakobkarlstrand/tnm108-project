@@ -43,15 +43,8 @@ function Article({ article }: Props) {
 
                 <p>{article.description || article.content?.slice(0, 200)}</p>
                 <p>
-                    Positive headline:{" "}
-                    <b>{`${article.probability_title.pos.toFixed(2)}`}</b>
-                </p>
-                <p>
-                    Positive description:{" "}
-                    <b>
-                        {" "}
-                        {`${article.probability_description.pos.toFixed(2)}`}
-                    </b>
+                    Positive index:{" "}
+                    <b>{`${article.probability_description.pos.toFixed(2)}`}</b>
                 </p>
             </div>
         </div>

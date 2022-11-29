@@ -17,11 +17,11 @@ function ListOfArticles({ articles }: Props) {
             }}
         >
             {articles
-                .sort((a, b) => {
-                    if (b.probability_title.pos > a.probability_title.pos)
-                        return 1;
-                    else return -1;
-                })
+                .sort(
+                    (a, b) =>
+                        b.probability_description.pos -
+                        a.probability_description.pos
+                )
                 .map((article) => {
                     return <Article key={article.title} article={article} />;
                 })}

@@ -10,10 +10,6 @@ export interface IArticle {
     description?: string;
     content?: string;
     link: string;
-    probability_title: {
-        pos: number;
-        neg: number;
-    };
     probability_description: {
         pos: number;
         neg: number;
